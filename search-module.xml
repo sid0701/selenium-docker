@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test thread-count="5" name="javaTest">
+		<parameter name="keyword" value="java" />
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="qaTest">
+		<parameter name="keyword" value="qa" />
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="webdriverTest">
+		<parameter name="keyword" value="webdriver" />
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="dockerTest">
+		<parameter name="keyword" value="docker" />
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="kubernetesTest">
+		<parameter name="keyword" value="kubernetes" />
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
